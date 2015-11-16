@@ -21,6 +21,9 @@
         <th>Price:</th>
         <td><%= format_price(event) %></td>
       </tr>
+      <tr>
+        <td><%= link_to 'Edit', edit_event_path(event) %></td>
+      </tr>
     </table>
   </article>
 <% end %>
