@@ -9,4 +9,12 @@ module EventsHelper
     end
   end
 
+  def image_for(event)
+    if event.image_file_name.blank?
+      image_tag '5766004.png'
+    else
+      image_tag event.image_file_name
+    end
+  end
+
 end
