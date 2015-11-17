@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :registrations
   root 'events#index'
   # get 'events',          to: 'events#index'
   # get 'events/new',      to: 'events#new'

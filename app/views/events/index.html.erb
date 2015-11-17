@@ -6,7 +6,11 @@
       <article class="event">
         <header>
           <%= image_for(event) %>
-          <h2><%= link_to(event.name, event) %></h2>
+          <h2>
+            <%= link_to(event.name, event) %>
+            <%= link_to 'Edit', edit_event_path(event), class: 'button' %>
+            <%= link_to 'Delete', event_path(event), method: :delete, data: { confirm: "Are you sure you want to delete #{event.name}?" }, class: 'button' %>
+          </h2>
           <h3><%= pluralize(event.capacity, 'spot') %></h3>
         </header>
         <p>
