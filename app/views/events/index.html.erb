@@ -1,3 +1,5 @@
+<%= link_to 'New Event', new_event_path, class: 'button' %>
+
 <ul id="events">
   <% @events.each do |event| %>
     <li>
@@ -28,3 +30,5 @@
     </li>
   <% end %>
 </ul>
+
+<%= link_to 'New Event', new_event_path, class: 'button' %>
